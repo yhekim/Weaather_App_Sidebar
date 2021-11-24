@@ -31,7 +31,7 @@ body {
     font-size: 2rem;
     background: transparent;
     border-color: transparent;
-    color: #a69678;
+    color: #C85C5C;
     transition: all 0.3s linear;
     cursor: pointer;
     position: fixed;
@@ -58,25 +58,25 @@ body {
     transform: translateX(0);
 }
 
-.black {
-    background-color: black;
+.onecolor {
+    background-color: #C85C5C;
     width: 60%;
     max-width: 480px;
     min-width: 280px;
     transition-delay: 0.4s;
 }
 
-.black.visible {
+.onecolor.visible {
     transition-delay: 0s;
 }
 
-.gold {
-    background-color: #a69678;
+.orange {
+    background-color: #F9975D;
     width: 92%;
     transition-delay: 0.2s;
 }
 
-.gold.visible {
+.orange.visible {
     transition-delay: 0.2s;
 }
 
@@ -99,7 +99,8 @@ body {
     border: none;
     background-color: transparent;
     cursor: pointer;
-    font-size: 24px;
+    font-size: 2.4rem;
+    color: #C85C5C;
 }
 
 .close-btn:hover {
@@ -118,16 +119,21 @@ body {
 }
 
 .list li:hover {
-    background-color: #a69678;
+    background-color: #F9975D;
 }
 
 .list li a {
-    color: rgb(34, 31, 31);
+    color: #FBD148;
     font-weight: 800;
     text-decoration: none;
     text-transform: uppercase;
     font-size: 1.125rem;
     letter-spacing: 0.1rem;
+}
+
+.list li a:hover {
+    color: #C85C5C;
+    font-weight: 1000;
 }
 
 .list ul {
@@ -138,7 +144,7 @@ body {
     display: inline-block;
     width: 150px;
     border-radius: 30%;
-    background-color: #a69678;
+    background-color: #C85C5C;
     padding: 8px;
     margin: 20px 40px;
 }
@@ -157,11 +163,12 @@ body {
 }
 
 .social-icons i {
-    color: #a69678;
+    color: #FBD148;
     position: fixed;
     bottom: 2rem;
 }
 
 .social-icons i:hover {
-    color: #be974e;
+    color: #B2EA70;
+    transform: scale(1.06);
 }
