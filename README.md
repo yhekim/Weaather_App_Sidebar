@@ -1,13 +1,13 @@
 # Frees : Weather - JS 
 
-- https://yhekim.github.io/Weather-JS/
+- https://yhekim.github.io/Weaather_App_Sidebar/
 
-- https://heuristic-shirley-77814f.netlify.app/
+- https://quirky-montalcini-b728e7.netlify.app
 
 ## Description
 Project aims to create a Weather.
 
-![gif](https://raw.githubusercontent.com/yhekim/Weather-JS/main/hava-durumu-JS.gif)
+![gif](https://github.com/yhekim/Weaather_App_Sidebar/blob/main/ezgif.com-gif-maker.gif)
 
 
 ### At the end of the project, following topics are to be covered;
