@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<style>
+    #logo {
+        width: 100px;
+        height: 100px;
+    }
+</style>
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Weather App</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="main.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css" integrity="sha512-1PKOgIY59xJ8Co8+NE6FZ+LOAZKjy+KY8iq0G4B3CyeY6wYHN3yt9PW0XpSriVlkMXe40PTKnXrLnZ9+fkDaog==" crossorigin="anonymous" />
+    <script src="js/aes.js"></script>
+    <script src="js/Extentions.js"></script>
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+</head>
+
+<body>
+    <section class="top-banner">
+        <div class="container">
+            <center>
+                <img src="https://i.pinimg.com/564x/e3/f9/c4/e3f9c42f3b449e72123466082ae3eb18.jpg" alt="Logo" class="logo" />
+                <h1 class="heading">Weather App</h1>
+            </center>
+            <form class="top-banner form">
+                <input class="top-banner input" type="text" placeholder="Search for a city" autofocus />
+                <button type="submit">SUBMIT</button>
+                <span class="msg"></span>
+            </form>
+        </div>
+    </section>
+    <section class="ajax-section">
+        <div class="container">
+            <ul class="cities"></ul>
+        </div>
+    </section>
+    <!-- <footer class="page-footer">
+      <div class="container">
+        <small
+          >Made with <span>❤</span> by
+          <a href="https://github.com/RynDaniel" target="_blank">Ryan Daniel</a>
+        </small>
+      </div>
+    </footer> -->
+    <button class="nav-btn open-btn">
+      <i class="fas fa-bars"></i>
+    </button>
+
+    <!-- <img
+      src="https://i.pinimg.com/564x/e3/f9/c4/e3f9c42f3b449e72123466082ae3eb18.jpg"
+      alt="Logo"
+      class="logo"
+    /> -->
+
+    <p class="text">
+        Halatsar<span><br /></span>Design
+    </p>
+
+    <div class="nav black">
+        <div class="nav gold">
+            <div class="nav white">
+                <button class="nav-btn close-btn">
+            <i class="fas fa-times"></i>
+          </button>
+
+                <img src="./amblem.png" alt="Logo" class="logo" />
+
+                <ul class="list">
+                    <li><a href="index3.html">home</a></li>
+                    <li><a href="#">about</a></li>
+                    <li><a href="#">projects</a></li>
+                    <li><a href="#">contact</a></li>
+                    <li><a href="#">Teams</a></li>
+                    <li><a href="#">Locations</a></li>
+                    <li><a href="#">Blog</a></li>
+                    <li></li>
+                </ul>
+                <ul class="social-icons">
+                    <li>
+                        <a href="https://www.facebook.com/"><i class="fab fa-facebook"></i
+              ></a>
+                    </li>
+                    <li>
+                        <a href="https://www.twitter.com/"><i class="fab fa-twitter"></i
+              ></a>
+                    </li>
+                    <li>
+                        <a href="https://github.com/Halityildiz"><i class="fab fa-github"></i
+              ></a>
+                    </li>
+                    <li>
+                        <a href="https://www.linkedin.com/in/halityildiz35"><i class="fab fa-linkedin"></i
+              ></a>
+                    </li>
+                    <li>
+                        <a href="https://www.instagram.com/halit_yildiz35/"><i class="fab fa-instagram-square"></i
+              ></a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <script>
+        const open_btn = document.querySelector(".open-btn");
+        const close_btn = document.querySelector(".close-btn");
+        const nav = document.querySelectorAll(".nav");
+
+        // console.log(nav);
+
+        open_btn.addEventListener("click", () => {
+            nav.forEach((element) => element.classList.add("visible"));
+        });
+
+        close_btn.addEventListener("click", () => {
+            nav.forEach((element) => element.classList.remove("visible"));
+        });
+    </script>
+
+    <script src="weather.js"></script>
+</body>
+
+</html>
